@@ -1,0 +1,6 @@
+.custom-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
