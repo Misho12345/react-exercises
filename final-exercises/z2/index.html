@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Списък</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1>To-Do Списък</h1>
+
+      <div class="controls">
+        <input id="todo-input" type="text" placeholder="Нова задача..." />
+        <button id="add-btn" type="button">Добави</button>
+      </div>
+
+      <div id="error"></div>
+
+      <div id="filters">
+        <button type="button" data-filter="all">Всички</button>
+        <button type="button" data-filter="active">Активни</button>
+        <button type="button" data-filter="completed">Завършени</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+      <div id="counter"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

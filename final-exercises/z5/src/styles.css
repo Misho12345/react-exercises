@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.toolbar-row,
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  background: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dashboard {
+  padding: 12px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+}
+
+.board {
+  display: flex;
+  gap: 16px;
+}
+
+.kanban-column {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+}
+
+.kanban-column h3 {
+  margin-top: 0;
+}
+
+.task-card {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #cccccc;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  color: #ffffff;
+}
+
+.priority-low {
+  background: gray;
+}
+
+.priority-medium {
+  background: orange;
+}
+
+.priority-high {
+  background: red;
+}
+
+.delete-button {
+  margin-left: 8px;
+}
+
+@media (max-width: 900px) {
+  .board {
+    flex-direction: column;
+  }
+
+  .App {
+    margin: 20px auto;
+  }
+}
